@@ -1,0 +1,145 @@
+@font-face {
+    font-family: MyriadProRegular;
+    src: local("MyriadProRegular"),
+    local("MyriadProRegular"),
+    url('../fonts/MyriadProRegular.ttf');
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    font-family: MyriadProRegular;
+}
+
+body {
+    min-height: 100%;
+    background-color: #e9f0f4;
+}
+
+.task-list-container {
+    width: 320px;
+    margin: 50px auto 0;
+}
+
+.task-list-container .task-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-list-container .task-list td,
+.task-list-container .task-list th {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    text-align: center;
+}
+
+.task-list-container .task-list tr th {
+    background-color: #2e3641;
+    color: #dae4eb;
+    border-color: #2e3641;
+}
+
+.task-list-container .task-list .task-header,
+.task-list-container .task-list .task-text {
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+
+.task-list-container .task-list .task-header {
+    font-size: 14px;
+}
+
+.task-list-container .task-list tr th:first-of-type {
+    border-right: 1px solid #454f5c;
+}
+
+.task-list-container .task-list tr td:first-of-type,
+.task-list-container .task-list tr td:nth-of-type(2) {
+    border-right: 1px solid #f2e3df;
+}
+
+.task-list-container .task-list tr th:first-of-type,
+.task-list-container .task-list tr td:first-of-type {
+    width: 30px;
+    height: 30px;
+}
+
+.task-list-container .task-list tr th:nth-of-type(2),
+.task-list-container .task-list tr td:nth-of-type(2) {
+    width: 5px;
+    height: 30px;
+}
+
+.task-list-container .task-list tr th {
+    height: 35px;
+}
+
+.task-list-container .task-list tr th:nth-of-type(2) {
+    border-right: 1px solid #454f5c;
+}
+
+.task-list-container .task-list .controls {
+    border-left: none;
+    width: 36px;
+}
+
+.task-list-container .task-list .task-text {
+    border-right: none;
+    font-size: 12px;
+}
+
+.task-list-container .task-text-input {
+    font-family: MyriadProRegular;
+    font-size: 12px;
+    border: none;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.task-list-container .task-text.add-text {
+    color: #dae4eb;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.task-list-container .task-item.new-task-item {
+    cursor: pointer;
+}
+
+.task-list-container .task-item.blank {
+    height: 40px;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon-trash {
+    background-image: url('../img/trash.png');
+    width: 11px;
+    height: 12px;
+}
+
+.icon-plus {
+    background-image: url('../img/plus.png');
+    width: 8px;
+    height: 8px;
+}
+
+.task-list-container .task-list .delete-task {
+    display: none;
+}
+
+.task-list-container .task-item:hover .delete-task {
+    display: inline-block;
+}
+
+.layouts {
+    display: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <title>Todo list</title>
+</head>
+<body>
+    <div class="task-list-container">
+        <table class="task-list">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th class="task-header">My ToDo List</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="tasks-container">
+                <tr class="task-item new-task-item">
+                    <td>
+                        <i class="icon icon-plus"></i>
+                    </td>
+                    <td></td>
+                    <td class="task-text add-text">
+                        Add new task...
+                    </td>
+                    <td class="controls"></td>
+                </tr>
+                <tr class="task-item blank">
+                    <td></td>
+                    <td></td>
+                    <td class="task-text"></td>
+                    <td class="controls"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="layouts">
+        <table>
+            <tr class="task-item" data-attr="text">
+                <td><input type="checkbox" data-property="checked"></td>
+                <td></td>
+                <td class="task-text">
+                    <input type="text" class="task-text-input" value="Some text" maxlength="40"
+                           data-property="text">
+                </td>
+                <td class="controls">
+                    <a href="#" class="icon icon-trash delete-task" data-property="id"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/Todo.js"></script>
+</body>
+</html>
